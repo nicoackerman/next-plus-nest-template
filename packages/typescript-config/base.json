@@ -1,6 +1,11 @@
 {
   "$schema": "https://json.schemastore.org/tsconfig",
   "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@repo/api": ["packages/@repo/api/src/index.ts"],
+      "@repo/ui": ["packages/@repo/ui/src/index.ts"],
+    },
     "declaration": true,
     "declarationMap": true,
     "esModuleInterop": true,
